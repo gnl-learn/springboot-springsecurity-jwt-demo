@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: boot-demo-security-jwt
+  datasource:
+    url: jdbc:mysql:///springboot?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  type-aliases-package: com.demo.boot.bean
+  configuration:
+    map-underscore-to-camel-case: true
+
+request:
+  white: /user/hello,/user/login
